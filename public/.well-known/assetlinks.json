@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.dukaandost.app",
+      "sha256_cert_fingerprints": [
+        "14:6D:E9:7D:0F:52:AB:AC:6A:E7:5C:95:C7:E3:4C:E3:4A:26:FA:BF:6B:4A:E6:BC:AA:1F:B5:7D:1E:58:62:3A"
+      ]
+    }
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "name": "Karobar Plus - Business & Billing Manager",
+  "description": "Smart business management, billing, inventory, khata, and accounting app tailored for Pakistani retailers, wholesalers, and shops in Urdu and English.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
