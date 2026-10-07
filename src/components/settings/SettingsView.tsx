@@ -363,14 +363,23 @@ export const SettingsView: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <a
+            href="/dukaandost-source-code.zip"
+            download="dukaandost-source-code.zip"
+            className="flex items-center justify-center gap-2 p-3.5 rounded-2xl bg-emerald-50 hover:bg-emerald-100 border border-emerald-300 text-xs font-bold text-emerald-900 transition-colors shadow-xs"
+          >
+            <Download className="w-4 h-4 text-emerald-700" />
+            <span>Code ZIP (214 KB)</span>
+          </a>
+
           <button
             type="button"
             onClick={exportAllData}
             className="flex items-center justify-center gap-2 p-3.5 rounded-2xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-xs font-bold text-slate-800 transition-colors"
           >
             <Download className="w-4 h-4 text-emerald-600" />
-            <span>Download Backup (JSON)</span>
+            <span>Backup Data (JSON)</span>
           </button>
 
           <button

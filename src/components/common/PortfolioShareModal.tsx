@@ -12,6 +12,7 @@ import {
   Code,
   Globe,
   Briefcase,
+  Download,
 } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
 
@@ -139,6 +140,53 @@ Key Highlights:
                 <ExternalLink className="w-3 h-3" />
               </a>
             </div>
+          </div>
+
+          {/* Download Source Code ZIP Card */}
+          <div className="p-4 rounded-2xl bg-slate-900 text-white space-y-3 shadow-lg">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold text-[#00D26A] uppercase tracking-wider flex items-center gap-1.5">
+                <Download className="w-4 h-4" />
+                <span>Project Source Code (ZIP File)</span>
+              </span>
+              <span className="text-[10px] text-slate-400 font-mono">dukaandost-source-code.zip</span>
+            </div>
+
+            <p className="text-xs text-slate-300 leading-relaxed">
+              Download the complete, pristine project source code (React, TypeScript, Tailwind, PWA configuration, icons) as a single ZIP archive to run locally or upload to GitHub/hosting.
+            </p>
+
+            <div className="flex flex-wrap gap-2 pt-1">
+              <a
+                href="/dukaandost-source-code.zip"
+                download="dukaandost-source-code.zip"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#00D26A] to-emerald-400 hover:from-emerald-400 hover:to-[#00D26A] text-[#06281e] font-extrabold text-xs shadow-md transition-all active:scale-95"
+              >
+                <Download className="w-4 h-4 stroke-[2.5]" />
+                <span>Download Code ZIP (214 KB)</span>
+              </a>
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(`${liveUrl}/dukaandost-source-code.zip`);
+                  alert('Direct ZIP download link copied to clipboard!');
+                }}
+                className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs border border-white/20 transition-all"
+              >
+                <Copy className="w-3.5 h-3.5" />
+                <span>Copy ZIP Direct URL</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Pakistan Postal / Zip Code Helper (In case postal code was intended) */}
+          <div className="p-3.5 rounded-2xl bg-blue-50/70 border border-blue-200 text-xs text-blue-950 space-y-1">
+            <span className="font-bold text-blue-900 block">
+              Pakistani Cities Postal / ZIP Codes (پوسٹل / زپ کوڈز):
+            </span>
+            <p className="text-slate-600 text-[11px] leading-relaxed">
+              اگر آپ کو پلے اسٹور یا دکان کی رجسٹریشن کے لیے زپ (پوسٹل) کوڈ درکار ہے:
+              <strong> راولپنڈی: 46000</strong> • <strong>اسلام آباد: 44000</strong> • <strong>لاہور: 54000</strong> • <strong>کراچی: 74000</strong> • <strong>فیصل آباد: 38000</strong> • <strong>پشاور: 25000</strong> • <strong>ملتان: 60000</strong>
+            </p>
           </div>
 
           {/* QR Code & Mobile Scan */}
